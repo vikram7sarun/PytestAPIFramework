@@ -1,0 +1,28 @@
+Running Tests by Marker
+With markers applied, you can selectively run specific groups of tests:
+
+Run All Tests (Default):
+
+bash
+Copy code
+pytest tests/
+Run Smoke Tests Only:
+
+bash
+Copy code
+pytest -m "smoke"
+Run Regression Tests Only:
+
+bash
+Copy code
+pytest -m "regression"
+Run Both Smoke and Regression Tests:
+
+bash
+Copy code
+pytest -m "smoke or regression"
+Exclude Specific Marker (e.g., exclude smoke):
+
+bash
+Copy code
+pytest -m "not smoke"
